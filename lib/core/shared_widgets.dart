@@ -33,7 +33,7 @@ class AppAvatar extends StatelessWidget {
             color: AppColors.surfaceTertiary,
             boxShadow: showGlow
                 ? [
-                    BoxShadow(
+                    const BoxShadow(
                       color: AppColors.accentGlow,
                       blurRadius: 12,
                       spreadRadius: 2,

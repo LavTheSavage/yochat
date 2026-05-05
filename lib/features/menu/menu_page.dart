@@ -1,3 +1,7 @@
+import 'package:chatapp/features/menu/archive_page.dart';
+import 'package:chatapp/features/menu/friends_page.dart';
+import 'package:chatapp/features/menu/help_page.dart';
+import 'package:chatapp/features/menu/settings_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -88,18 +92,27 @@ class _MenuPageState extends State<MenuPage>
                     _MenuItem(
                       icon: Icons.settings_outlined,
                       label: 'Settings',
-                      onTap: () {},
+                      onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (_) => const SettingsPage())),
                     ),
                     _MenuItem(
                       icon: Icons.people_outline_rounded,
                       label: 'Friends',
                       badge: '12',
-                      onTap: () {},
+                      onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (_) => const FriendsPage())),
                     ),
                     _MenuItem(
                       icon: Icons.inventory_2_outlined,
                       label: 'Archive',
-                      onTap: () {},
+                      onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (_) => const ArchivePage())),
                     ),
                   ],
                 ),
@@ -112,12 +125,14 @@ class _MenuPageState extends State<MenuPage>
                     _MenuItem(
                       icon: Icons.info_outline_rounded,
                       label: 'About',
-                      onTap: () {},
+                      onTap: () => Navigator.push(context,
+                          MaterialPageRoute(builder: (_) => const AboutPage())),
                     ),
                     _MenuItem(
                       icon: Icons.help_outline_rounded,
                       label: 'Help',
-                      onTap: () {},
+                      onTap: () => Navigator.push(context,
+                          MaterialPageRoute(builder: (_) => const HelpPage())),
                     ),
                   ],
                 ),
@@ -433,7 +448,7 @@ class _MenuItem extends StatelessWidget {
               ),
               const SizedBox(width: 8),
             ],
-            Icon(
+            const Icon(
               Icons.chevron_right_rounded,
               color: AppColors.textMuted,
               size: 18,

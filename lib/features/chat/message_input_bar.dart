@@ -65,7 +65,7 @@ class MessageInputBar extends StatelessWidget {
                 ),
                 boxShadow: isTyping
                     ? [
-                        BoxShadow(
+                        const BoxShadow(
                           color: AppColors.accentGlow,
                           blurRadius: 8,
                           spreadRadius: 0,
@@ -222,8 +222,8 @@ class _EmojiButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.only(right: 4),
+      child: const Padding(
+        padding: EdgeInsets.only(right: 4),
         child: Icon(
           Icons.sentiment_satisfied_alt_rounded,
           color: AppColors.textMuted,

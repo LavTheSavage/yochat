@@ -1,10 +1,8 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:chatapp/core/chat_models.dart';
 import 'package:chatapp/core/app_theme.dart';
-import 'package:chatapp/core/shared_widgets.dart';
 import 'package:chatapp/features/chat/chat_bubble.dart';
 import 'package:chatapp/features/chat/chat_app_bar.dart';
 import 'package:chatapp/features/chat/message_input_bar.dart';

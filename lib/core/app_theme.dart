@@ -38,10 +38,8 @@ abstract class AppTheme {
       brightness: Brightness.dark,
       scaffoldBackgroundColor: AppColors.backgroundDark,
       colorScheme: const ColorScheme.dark(
-        background: AppColors.backgroundDark,
         surface: AppColors.surfaceSecondary,
         primary: AppColors.primaryAccent,
-        onBackground: AppColors.textPrimary,
         onSurface: AppColors.textPrimary,
       ),
       textTheme: GoogleFonts.dmSansTextTheme(
