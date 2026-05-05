@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../theme/app_theme.dart';
+import 'package:chatapp/core/app_theme.dart';
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Auth Text Field
-// ─────────────────────────────────────────────────────────────────────────────
-
-/// Premium dark text-field with animated focus border.
 class AuthTextField extends StatefulWidget {
   const AuthTextField({
     super.key,
@@ -108,8 +103,7 @@ class _AuthTextFieldState extends State<AuthTextField>
                 boxShadow: t > 0.1
                     ? [
                         BoxShadow(
-                          color: AppColors.primaryAccent
-                              .withOpacity(0.08 * t),
+                          color: AppColors.primaryAccent.withOpacity(0.08 * t),
                           blurRadius: 10,
                           spreadRadius: 1,
                         ),
@@ -155,8 +149,7 @@ class _AuthTextFieldState extends State<AuthTextField>
                       : null,
                   suffixIcon: widget.obscureText
                       ? GestureDetector(
-                          onTap: () =>
-                              setState(() => _obscure = !_obscure),
+                          onTap: () => setState(() => _obscure = !_obscure),
                           child: Icon(
                             _obscure
                                 ? Icons.visibility_off_outlined
