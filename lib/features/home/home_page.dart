@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../../../core/models/chat_models.dart';
-import '../../../../core/navigation/app_routes.dart';
-import '../../../../core/theme/app_theme.dart';
-import '../../../../core/widgets/shared_widgets.dart';
-import '../../../chat/presentation/pages/chat_page.dart';
-import '../widgets/conversation_tile.dart';
-import '../widgets/filter_tab_bar.dart';
-import '../widgets/home_header.dart';
+import 'package:chatapp/core/chat_models.dart';
+import 'package:chatapp/core/app_routes.dart';
+import 'package:chatapp/core/app_theme.dart';
+import 'package:chatapp/core/shared_widgets.dart';
+import 'package:chatapp/features/chat/chat_page.dart';
+import 'package:chatapp/features/home/conversation_tile.dart';
+import 'package:chatapp/features/home/filter_tab_bar.dart';
+import 'package:chatapp/features/home/home_header.dart';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Mock Data
@@ -120,9 +120,7 @@ class _HomeBodyState extends State<HomeBody>
       list = list
           .where((c) =>
               c.name.toLowerCase().contains(_searchQuery.toLowerCase()) ||
-              c.lastMessage
-                  .toLowerCase()
-                  .contains(_searchQuery.toLowerCase()))
+              c.lastMessage.toLowerCase().contains(_searchQuery.toLowerCase()))
           .toList();
     }
 

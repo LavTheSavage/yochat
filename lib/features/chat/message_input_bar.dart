@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../../../core/theme/app_theme.dart';
+import 'package:chatapp/core/app_theme.dart';
 
 /// Premium message input bar with animated send button.
 class MessageInputBar extends StatelessWidget {
@@ -143,9 +143,7 @@ class AnimatedSendButton extends StatelessWidget {
           shape: BoxShape.circle,
           color: isTyping ? AppColors.primaryAccent : AppColors.surfaceTertiary,
           border: Border.all(
-            color: isTyping
-                ? AppColors.primaryAccent
-                : AppColors.borderSubtle,
+            color: isTyping ? AppColors.primaryAccent : AppColors.borderSubtle,
             width: 1,
           ),
           boxShadow: isTyping

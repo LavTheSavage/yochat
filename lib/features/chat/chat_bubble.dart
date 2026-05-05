@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../../../core/models/chat_models.dart';
-import '../../../../core/theme/app_theme.dart';
-import '../../../../core/widgets/shared_widgets.dart';
+import 'package:chatapp/core/chat_models.dart';
+import 'package:chatapp/core/app_theme.dart';
+import 'package:chatapp/core/shared_widgets.dart';
 
-/// Animated chat bubble that pops in when it appears.
 class AnimatedChatBubble extends StatefulWidget {
   const AnimatedChatBubble({
     super.key,

@@ -2,12 +2,12 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../../../core/models/chat_models.dart';
-import '../../../../core/theme/app_theme.dart';
-import '../../../../core/widgets/shared_widgets.dart';
-import '../widgets/chat_bubble.dart';
-import '../widgets/chat_app_bar.dart';
-import '../widgets/message_input_bar.dart';
+import 'package:chatapp/core/chat_models.dart';
+import 'package:chatapp/core/app_theme.dart';
+import 'package:chatapp/core/shared_widgets.dart';
+import 'package:chatapp/features/chat/chat_bubble.dart';
+import 'package:chatapp/features/chat/chat_app_bar.dart';
+import 'package:chatapp/features/chat/message_input_bar.dart';
 
 List<ChatMessage> _buildMockMessages(String conversationName) {
   final now = DateTime.now();

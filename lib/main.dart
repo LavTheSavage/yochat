@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'core/theme/app_theme.dart';
-import 'features/auth/presentation/pages/login_page.dart';
+import 'package:chatapp/core/app_theme.dart';
+import 'package:chatapp/features/auth/login_page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

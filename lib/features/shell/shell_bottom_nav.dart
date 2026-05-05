@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../../../core/theme/app_theme.dart';
-import '../../../../core/widgets/shared_widgets.dart';
+import 'package:chatapp/core/app_theme.dart';
+import 'package:chatapp/core/shared_widgets.dart';
 
 /// Shared bottom navigation bar used by [ShellPage].
 class ShellBottomNav extends StatelessWidget {
@@ -49,9 +49,8 @@ class ShellBottomNav extends StatelessWidget {
                 icon: _items[i].icon,
                 label: _items[i].label,
                 isSelected: selectedIndex == i,
-                badge: i == 1 && notificationCount > 0
-                    ? notificationCount
-                    : null,
+                badge:
+                    i == 1 && notificationCount > 0 ? notificationCount : null,
                 onTap: () => onTap(i),
               ),
             ),
@@ -136,11 +135,9 @@ class _NavItem extends StatelessWidget {
               duration: const Duration(milliseconds: 200),
               style: GoogleFonts.dmSans(
                 fontSize: 11,
-                fontWeight:
-                    isSelected ? FontWeight.w600 : FontWeight.w400,
-                color: isSelected
-                    ? AppColors.primaryAccent
-                    : AppColors.textMuted,
+                fontWeight: isSelected ? FontWeight.w600 : FontWeight.w400,
+                color:
+                    isSelected ? AppColors.primaryAccent : AppColors.textMuted,
               ),
               child: Text(label),
             ),

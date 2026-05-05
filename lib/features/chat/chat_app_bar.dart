@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../../../core/models/chat_models.dart';
-import '../../../../core/theme/app_theme.dart';
-import '../../../../core/widgets/shared_widgets.dart';
+import 'package:chatapp/core/chat_models.dart';
+import 'package:chatapp/core/app_theme.dart';
+import 'package:chatapp/core/shared_widgets.dart';
 
 /// Custom app bar for the chat screen.
 class ChatAppBar extends StatelessWidget {
@@ -91,7 +91,9 @@ class ChatAppBar extends StatelessWidget {
                       const SizedBox(width: 5),
                     ],
                     Text(
-                      conversation.isOnline ? 'Online now' : 'Last seen recently',
+                      conversation.isOnline
+                          ? 'Online now'
+                          : 'Last seen recently',
                       style: GoogleFonts.dmSans(
                         fontSize: 12,
                         color: conversation.isOnline

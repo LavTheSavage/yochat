@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../../../../core/theme/app_theme.dart';
-import '../../../home/presentation/pages/home_page.dart';
-import '../../../notifications/presentation/pages/notifications_page.dart';
-import '../../../menu/presentation/pages/menu_page.dart';
-import '../widgets/shell_bottom_nav.dart';
+import 'package:chatapp/core/app_theme.dart';
+import 'package:chatapp/features/home/home_page.dart';
+import 'package:chatapp/features/notifications/notifications_page.dart';
+import 'package:chatapp/features/menu/menu_page.dart';
+import 'package:chatapp/features/shell/shell_bottom_nav.dart';
 
 /// Root shell that hosts the three bottom-nav destinations.
 /// Keeps page state alive with [IndexedStack].

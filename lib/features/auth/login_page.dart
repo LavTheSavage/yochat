@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:chatapp/core/app_routes.dart';
-import 'Package:chatapp/core/app_theme.dart';
+import 'package:chatapp/core/app_theme.dart';
 import 'package:chatapp/core/auth_widgets.dart';
 import 'package:chatapp/features/shell/shell_page.dart';
-import 'register_page.dart';
+import 'package:chatapp/features/auth/register_page.dart';
 
 /// Login page with email + password, animated entrance, and form validation.
 class LoginPage extends StatefulWidget {

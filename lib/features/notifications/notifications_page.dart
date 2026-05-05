@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../../../core/models/app_models.dart';
-import '../../../../core/theme/app_theme.dart';
-import '../../../../core/widgets/shared_widgets.dart';
+import 'package:chatapp/core/app_models.dart';
+import 'package:chatapp/core/app_theme.dart';
+import 'package:chatapp/core/shared_widgets.dart';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Mock Data
@@ -174,8 +174,7 @@ class _NotificationsPageState extends State<NotificationsPage> {
                           (ctx, i) => _NotificationTile(
                             notification: _read[i],
                             index: i + (_unread.length),
-                            onDismiss: () =>
-                                _dismissNotification(_read[i].id),
+                            onDismiss: () => _dismissNotification(_read[i].id),
                           ),
                           childCount: _read.length,
                         ),
@@ -337,8 +336,7 @@ class _SectionLabel extends StatelessWidget {
           if (count != null) ...[
             const SizedBox(width: 8),
             Container(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+              padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
               decoration: BoxDecoration(
                 color: accentColor.withOpacity(0.15),
                 borderRadius: BorderRadius.circular(8),
@@ -533,9 +531,8 @@ class _NotificationTileState extends State<_NotificationTile>
                               color: isUnread
                                   ? AppColors.primaryAccent
                                   : AppColors.textMuted,
-                              fontWeight: isUnread
-                                  ? FontWeight.w600
-                                  : FontWeight.w400,
+                              fontWeight:
+                                  isUnread ? FontWeight.w600 : FontWeight.w400,
                             ),
                           ),
                         ],
